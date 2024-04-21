@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Practica 1 Segundo Parcial</string>
+    <string name="hello_text">Hola, Estas en la Sesión 1 del 2do Parcial!</string>
+    <string name="accept_button">Aceptar</string>
+    <string name="button_clicked">Haz dado click al botón!</string>
+    <string name="hint_nombre">Nombre(s)</string>
+    <string name="hint_apellido">Apellidos</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_correo">Correo electronico</string>
+    <string name="here_text">Aquí el texto del EditText</string>
+</resources>
