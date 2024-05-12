@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lista y Spinners</string>
+    <string name="txtInicial">Selecciona un Páis</string>
+    <string name="txtBoton">Aceptar</string>
+</resources>
