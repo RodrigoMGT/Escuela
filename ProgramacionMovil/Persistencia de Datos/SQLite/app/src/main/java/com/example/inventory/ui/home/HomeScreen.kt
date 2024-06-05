@@ -103,7 +103,7 @@ fun HomeScreen(
             ) {
                 Icon(
                     imageVector = Icons.Default.Add,
-                    contentDescription = stringResource(R.string.item_entry_title)
+                    contentDescription = stringResource(R.string.titulo_nuevo_acticulo)
                 )
             }
         },
@@ -130,7 +130,7 @@ private fun HomeBody(
     ) {
         if (itemList.isEmpty()) {
             Text(
-                text = stringResource(R.string.no_item_description),
+                text = stringResource(R.string.articuloNoEncontrado),
                 textAlign = TextAlign.Center,
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier.padding(contentPadding),
@@ -191,7 +191,7 @@ private fun InventoryItem(
                 )
             }
             Text(
-                text = stringResource(R.string.in_stock, item.quantity),
+                text = stringResource(R.string.en_stock, item.quantity),
                 style = MaterialTheme.typography.titleMedium
             )
         }

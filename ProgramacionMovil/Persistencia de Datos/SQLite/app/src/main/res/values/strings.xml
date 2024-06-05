@@ -14,25 +14,25 @@
   ~ limitations under the License.
   -->
 <resources>
-    <string name="app_name">Inventory</string>
-    <string name="attention">Attention</string>
-    <string name="back_button">Back</string>
-    <string name="delete">Delete</string>
-    <string name="delete_question">Are you sure you want to delete?</string>
-    <string name="no_item_description">Oops!\nNo items in the inventory.\nTap + to add.</string>
-    <string name="edit_item_title">Edit Item</string>
-    <string name="item">Item</string>
-    <string name="item_detail_title">Item Details</string>
-    <string name="item_entry_title">Add Item</string>
-    <string name="item_name_req">Item Name*</string>
-    <string name="item_price_req">Item Price*</string>
+    <string name="app_name">Inventario</string>
+    <string name="atendido">Atendido</string>
+    <string name="btn_atras">Atras</string>
+    <string name="delete">Eliminar</string>
+    <string name="delete_question">Estas seguro de elimiar el articulo?</string>
+    <string name="articuloNoEncontrado">Lo sentimos!\nNo existe el articulo en el inventario.\nToca + para añadir.</string>
+    <string name="titulo_edicion_acticulo">Editar Articulo</string>
+    <string name="item">Articulo</string>
+    <string name="titulo_detalle_acticulo">Detalle de Articulo</string>
+    <string name="titulo_nuevo_acticulo">Añadir Articulo</string>
+    <string name="lbl_nombre">Nombre del Articulo*</string>
+    <string name="lbl_precio">Precio del Articulo*</string>
     <string name="no">No</string>
-    <string name="price">Price</string>
-    <string name="quantity_in_stock">Quantity in stock</string>
-    <string name="in_stock">%d in stock</string>
-    <string name="quantity_req">Quantity in Stock*</string>
-    <string name="save_action">Save</string>
-    <string name="sell">Sell</string>
-    <string name="yes">Yes</string>
-    <string name="required_fields">*required fields</string>
+    <string name="precio">Precio</string>
+    <string name="cantidad_stock">Cantidad en stock</string>
+    <string name="en_stock">%d En stock</string>
+    <string name="cantidad_requerida">Cantidad en Stock*</string>
+    <string name="accion_guardar">Guardar</string>
+    <string name="vender">Vender</string>
+    <string name="yes">Si</string>
+    <string name="campos_requeridos">*campos requeridos</string>
 </resources>

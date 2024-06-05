@@ -52,7 +52,7 @@ import java.util.Locale
 
 object ItemEntryDestination : NavigationDestination {
     override val route = "item_entry"
-    override val titleRes = R.string.item_entry_title
+    override val titleRes = R.string.titulo_nuevo_acticulo
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -120,7 +120,7 @@ fun ItemEntryBody(
             shape = MaterialTheme.shapes.small,
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text(text = stringResource(R.string.save_action))
+            Text(text = stringResource(R.string.accion_guardar))
         }
     }
 }
@@ -139,7 +139,7 @@ fun ItemInputForm(
         OutlinedTextField(
             value = itemDetails.name,
             onValueChange = { onValueChange(itemDetails.copy(name = it)) },
-            label = { Text(stringResource(R.string.item_name_req)) },
+            label = { Text(stringResource(R.string.lbl_nombre)) },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
                 unfocusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
@@ -153,7 +153,7 @@ fun ItemInputForm(
             value = itemDetails.price,
             onValueChange = { onValueChange(itemDetails.copy(price = it)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
-            label = { Text(stringResource(R.string.item_price_req)) },
+            label = { Text(stringResource(R.string.lbl_precio)) },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
                 unfocusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
@@ -168,7 +168,7 @@ fun ItemInputForm(
             value = itemDetails.quantity,
             onValueChange = { onValueChange(itemDetails.copy(quantity = it)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-            label = { Text(stringResource(R.string.quantity_req)) },
+            label = { Text(stringResource(R.string.cantidad_requerida)) },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
                 unfocusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
@@ -180,7 +180,7 @@ fun ItemInputForm(
         )
         if (enabled) {
             Text(
-                text = stringResource(R.string.required_fields),
+                text = stringResource(R.string.campos_requeridos),
                 modifier = Modifier.padding(start = dimensionResource(id = R.dimen.padding_medium))
             )
         }

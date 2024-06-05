@@ -68,7 +68,7 @@ import kotlinx.coroutines.launch
 
 object ItemDetailsDestination : NavigationDestination {
     override val route = "item_details"
-    override val titleRes = R.string.item_detail_title
+    override val titleRes = R.string.titulo_detalle_acticulo
     const val itemIdArg = "itemId"
     val routeWithArgs = "$route/{$itemIdArg}"
 }
@@ -103,7 +103,7 @@ fun ItemDetailsScreen(
             ) {
                 Icon(
                     imageVector = Icons.Default.Edit,
-                    contentDescription = stringResource(R.string.edit_item_title),
+                    contentDescription = stringResource(R.string.titulo_edicion_acticulo),
                 )
             }
         },
@@ -154,7 +154,7 @@ private fun ItemDetailsBody(
             shape = MaterialTheme.shapes.small,
             enabled = !itemDetailsUiState.outOfStock
         ) {
-            Text(stringResource(R.string.sell))
+            Text(stringResource(R.string.vender))
         }
         OutlinedButton(
             onClick = { deleteConfirmationRequired = true },
@@ -204,7 +204,7 @@ fun ItemDetails(
                 )
             )
             ItemDetailsRow(
-                labelResID = R.string.quantity_in_stock,
+                labelResID = R.string.cantidad_stock,
                 itemDetail = item.quantity.toString(),
                 modifier = Modifier.padding(
                     horizontal = dimensionResource(
@@ -214,7 +214,7 @@ fun ItemDetails(
                 )
             )
             ItemDetailsRow(
-                labelResID = R.string.price,
+                labelResID = R.string.precio,
                 itemDetail = item.formatedPrice(),
                 modifier = Modifier.padding(
                     horizontal = dimensionResource(
@@ -244,7 +244,7 @@ private fun DeleteConfirmationDialog(
     onDeleteConfirm: () -> Unit, onDeleteCancel: () -> Unit, modifier: Modifier = Modifier
 ) {
     AlertDialog(onDismissRequest = { /* Do nothing */ },
-        title = { Text(stringResource(R.string.attention)) },
+        title = { Text(stringResource(R.string.atendido)) },
         text = { Text(stringResource(R.string.delete_question)) },
         modifier = modifier,
         dismissButton = {
